@@ -9,15 +9,12 @@ function largestPrimeFactor(n) {
     // Base cases:
     if (n < 3) return 1;
     if (n % 2 === 0) return largestPrimeFactor(n/2);
-
     let prime = 3;
-    // First find a prime that divides n
-    while (n % prime !== 0) {
+    while (n % prime !== 0) { // Find a prime that divides n
         prime = nextPrime(prime);
     }
-
-    // This is another base case to end the recursion
     if (n === prime) return n;
+
     // Recursive case: divide n by the smallest prime factor and calculate the largest again
     return largestPrimeFactor(n/prime);
 }

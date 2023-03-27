@@ -6,7 +6,6 @@ the product of two 2-digit numbers is 9009 = 91 × 99.
 Find the largest palindrome made from the product of two 3-digit numbers.
 */
 
-
 function largestPalindrome(n=999, largest=0) {
     // Base case: n = 100, reached the last digit then return the largest palindrome found
     if (n <= 100) return largest;
@@ -24,7 +23,7 @@ function largestPalindrome(n=999, largest=0) {
     return largestPalindrome(n-1, largest);
 }
 
-// A function to check if number is palindrome
+// An auxiliary function to check if number is palindrome
 function isPalindrome(n) {
     let num = n.toString();
     let front = 0;

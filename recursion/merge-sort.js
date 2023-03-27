@@ -1,12 +1,14 @@
-// Takes an array and return an sorted array
+// Lesson from The Odin Project
+// The Merge Sort which takes an array and return the same array sorted.
 
 function mergeSort(array) {
-    // Base case, array of length 1 is already sorted
+    // Base case: array of length 1 is already sorted
     if (array.length === 1) {
         return array;
     }
 
-    // Recursive case, split the array in two sorted arrays
+    // Recursive case: split the array in two sorted arrays
+    
     const leftArray = mergeSort(array.slice(0, Math.round(array.length/2)));
     const rightArray = mergeSort(array.slice(Math.round(array.length/2)));
     let leftPointer = 0;
