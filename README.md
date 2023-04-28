@@ -1,3 +1,3 @@
 # Algorithms and Data Structures
 
-This is a collection of problems and exercises related to algorithms and data structures.
+This is a collection of codes related to my studies on algorithms and data structures using javascript.
